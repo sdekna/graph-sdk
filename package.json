@@ -1,0 +1,44 @@
+{
+  "name": "@fs-initiative/graph-sdk",
+  "version": "0.3.05",
+  "module": "./src/index.ts",
+  "description": "graph-sdk:",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "require": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./types": "./src/generated/schema.ts"
+  },
+  
+  "bin": {
+    "graph_typegen": "generate_schema.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdekna/graph-sdk.git"
+  },
+  "keywords": [
+    "graphql",
+    "sdk",
+    "svelte"
+  ],
+  "author": "Free Source Initiative",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/sdekna/graph-sdk/issues"
+  },
+  "homepage": "https://github.com/sdekna/graph-sdk#readme",
+
+  "devDependencies": {
+    "@gqlts/cli": "^3.2.20-beta.228",
+    "svelte": "^5.0.0-next.171",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "graphql": "^16.9.0",
+    "@gqlts/runtime": "^3.2.20-beta.228"
+  }
+}
